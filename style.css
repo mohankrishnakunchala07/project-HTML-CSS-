@@ -1,0 +1,674 @@
+/* ==========================================
+   METROFITT GYM - STYLESHEET
+   ========================================== */
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.red-text {
+    color: #e50914;
+}
+
+.gray-text {
+    color: #b3b3b3;
+}
+
+.muted-text {
+    color: #808080;
+}
+
+.section-tag {
+    color: #e50914;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dark-section {
+    background-color: #0b0b0b;
+}
+
+/* BUTTON STYLES */
+.btn-red {
+    background-color: #e50914;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.btn-red:hover {
+    background-color: #b80710;
+    color: #ffffff;
+}
+
+/* NAVBAR */
+.nav-bar {
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+.transparent-nav {
+    position: absolute;  /* Positions the nav relative to the page header instead of the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;   /* Keeps the nav on top of background images and overlays */
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.site-logo {
+    height: 40px;
+}
+
+.nav-item-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.nav-item-link:hover {
+    color: #e50914 !important;
+}
+
+.dropdown-list {
+    background-color: #141414;
+    border: 1px solid #333;
+}
+
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: 1;
+}
+
+.hero-content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* WATERMARK & SECTION HEADINGS */
+.watermark-text {
+    font-size: 80px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.03);
+    text-transform: uppercase;
+    white-space: nowrap;
+    user-select: none;
+    z-index: 0;
+}
+
+/* ABOUT SECTION */
+.border-red {
+    border: 1px solid rgba(229, 9, 20, 0.3);
+}
+
+.card-box {
+    background-color: #141414;
+    border: 1px solid #222;
+}
+
+.about-badge {
+    bottom: -20px;
+    right: -20px;
+    max-width: 220px;
+}
+
+/* PROGRAM CARDS */
+.program-card {
+    background-color: #141414;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #222;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.program-img-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.program-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program-content {
+    padding: 20px;
+}
+
+.program-title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.program-desc {
+    color: #b3b3b3;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.bottom-line {
+    height: 3px;
+    width: 40px;
+    background-color: #e50914;
+    margin-top: 15px;
+}
+
+/* EXPECT SECTION */
+.check-box {
+    width: 24px;
+    height: 24px;
+    background-color: #e50914;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.grid-img-wrapper {
+    height: 180px;
+    overflow: hidden;
+}
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* VIDEO BANNER */
+.video-wrapper {
+    max-height: 400px;
+    background-color: #000;
+}
+
+.video-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CARD DARK (WHAT WE OFFER) */
+.card-dark {
+    background-color: #141414;
+    transition: transform 0.3s ease;
+}
+
+.card-dark:hover {
+    transform: translateY(-5px);
+}
+
+/* TEAM SECTION */
+.trainer-img-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #141414;
+}
+
+.trainer-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trainer-line {
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+}
+
+.trainer-line.red-bg {
+    background-color: #e50914;
+}
+
+.trainer-watermark {
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.03);
+    z-index: 0;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonial-section {
+    background-color: #0c0c0c;
+    overflow: hidden;
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+/* Slide 1 - Text & Quote Icon Styles */
+.testimonial-quote {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.8;
+    max-width: 650px;
+    color: #d1d1d1 !important;
+}
+
+.quote-bg {
+    background: radial-gradient(circle at center, #600005 0%, #1a0002 60%, #0a0001 100%);
+    min-height: 450px;
+    height: 100%;
+    position: relative;
+}
+
+.large-quote-icon svg {
+    filter: drop-shadow(0 0 12px rgba(229, 9, 20, 0.5));
+}
+
+/* Slide 2 - Dark Left Chevron & Red Tinted Gym BG Styles */
+.bg-dark-slide {
+    background-color: #121212;
+    min-height: 450px;
+    z-index: 2;
+}
+
+.large-chevron-icon svg {
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.8));
+}
+
+.slide-gym-bg {
+    background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80') center center / cover no-repeat;
+    min-height: 450px;
+    position: relative;
+}
+
+.gym-overlay-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #121212 0%, rgba(120, 0, 0, 0.6) 40%, rgba(180, 0, 0, 0.4) 100%);
+}
+
+.scroll-top-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    background-color: #0066ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    z-index: 10;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.scroll-top-btn:hover {
+    background-color: #0052cc;
+}
+
+@media (max-width: 991px) {
+    .testimonial-quote {
+        text-align: center;
+    }
+    .testimonial-section .col-lg-7 {
+        align-items: center !important;
+        text-align: center !important;
+    }
+}
+
+/* ==========================================
+   FAQ SECTION STYLES
+   ========================================== */
+.faq-section {
+    background-color: #0b0b0b;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Watermark Text Behind Title */
+.faq-watermark {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 80px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #e50914;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    z-index: 1;
+    pointer-events: none;
+    line-height: 1;
+}
+
+.faq-heading {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    padding-top: 25px;
+}
+
+/* Accordion Container */
+.custom-faq-accordion {
+    border-top: 1px solid #333333;
+}
+
+.faq-custom-item {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #333333 !important;
+    border-radius: 0 !important;
+}
+
+/* Accordion Button Styles */
+.faq-custom-btn {
+    background-color: transparent !important;
+    color: #e50914 !important;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 18px 0 18px 30px !important;
+    box-shadow: none !important;
+    position: relative;
+    border: none;
+}
+
+.faq-custom-btn:focus {
+    box-shadow: none !important;
+}
+
+/* Custom +/- Icon before text */
+.faq-custom-btn::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #e50914;
+    line-height: 1;
+}
+
+.faq-custom-btn.collapsed::before {
+    content: '+';
+}
+
+/* Remove default Bootstrap arrow */
+.faq-custom-btn::after {
+    display: none !important;
+}
+
+/* Accordion Answer Body */
+.faq-custom-body {
+    background-color: transparent !important;
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 0 20px 30px !important;
+}
+
+/* Side Image Styles */
+.faq-side-img {
+    max-height: 550px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@media (max-width: 991px) {
+    .faq-heading {
+        font-size: 28px;
+    }
+    .faq-watermark {
+        font-size: 60px;
+        top: -20px;
+    }
+    .faq-side-img {
+        max-height: 400px;
+    }
+}
+
+
+/* ========================================================= */
+/* BLOG SECTION STYLES                                       */
+/* ========================================================= */
+
+.blog-heading {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.blog-card {
+    background-color: #121212; /* Adjust to match your dark card background class */
+    border-bottom: 2px solid #e50914; /* Matches red accent color */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.blog-img-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-img {
+    transform: scale(1.05);
+}
+
+.blog-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.blog-title {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.blog-meta {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.read-more-link {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: auto;
+    transition: color 0.2s ease;
+}
+
+.read-more-link:hover {
+    color: #e50914;
+}
+
+/* ========================================================= */
+/* FOOTER SECTION STYLES                                     */
+/* ========================================================= */
+
+.footer-section {
+    background-color: #0d0d0d;
+}
+
+.footer-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+.footer-heading {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #e50914;
+}
+
+/* Social Icon Boxes */
+.social-box {
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-box:hover {
+    background-color: #e50914;
+    color: #ffffff;
+}
+
+/* Legal Links */
+.footer-legal-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.footer-legal-links a:hover {
+    color: #e50914;
+}
+
+/* Scroll To Top Fixed Right Button */
+.footer-scroll-top-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #0066ff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease;
+}
+
+.footer-scroll-top-btn:hover {
+    background-color: #0052cc;
+    color: #ffffff;
+}
+
+
+
+/* ========================================================= */
+/* ADDITIONAL FOOTER & INTERACTIVE OVERRIDES                 */
+/* ========================================================= */
+
+/* General footer links hover state */
+footer a:hover {
+    color: #e50914 !important;
+    transition: color 0.2s ease-in-out;
+}
+
+/* White square social media buttons hover state */
+footer .bg-white:hover {
+    background-color: #e50914 !important;
+    color: #ffffff !important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* App store download buttons styling */
+footer .btn-outline-light {
+    border-color: #333333;
+    background-color: #111111;
+    transition: all 0.2s ease-in-out;
+}
+
+footer .btn-outline-light:hover {
+    background-color: #e50914;
+    border-color: #e50914;
+    color: #ffffff;
+}
+
+/* Red text utility match */
+.text-danger, .red-text {
+    color: #e50914 !important;
+}
